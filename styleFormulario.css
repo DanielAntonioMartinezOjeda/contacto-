@@ -1,0 +1,130 @@
+ 
+/*----------------------------------------------------------------------------------------------------------*/
+* {
+    box-sizing: border-box; /*para esta seccion estamos utilisando el comando universal para seleccionar todo, lo que pretendemos con esta linea de codigo es el ajustar a un mismo tamaño todos los elementos de nuestra paguina, es decir que haga el calculo por todos los elementos dentro de y les de un tamaño similar para que se pueda ver de manera mas estica al momento de abrir la pagina.
+
+    ***box-sizing: border-box;: La propiedad box-sizing determina cómo se calcula el tamaño total de un elemento, teniendo en cuenta el ancho y el alto, incluyendo el relleno (padding) y el borde (border). 
+    ***Cuando se establece en border-box, el tamaño total del elemento se mantiene constante y el ancho y alto especificados incluyen el relleno y el borde. Esto significa que el contenido del elemento se ajustará dentro de ese tamaño total sin afectar el diseño general.  */
+}
+
+/* -----------------------------------------------------------------------------------------------------------*/
+
+body {
+    background: #181818;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif; /*codigo CSS para inportar el tipo de fuente. */
+    padding: 0 1.5em; /*  con esta linea colocamos unos espacios en lo ancho de la pantalla. como margenes  */
+
+    /*  */
+
+}
+
+/* -----------------------------------------------------------------------------------------------------------*/
+.contenido { /* aqui estamos editando a nuestra clase principal la cual llamamos contenido  */
+    max-width: 1170px;
+    margin-left: auto; /* ancho maximo */
+    margin-right: auto;
+    padding: 1.5em; /* se colocara un espacio de margen asia todos los lados de esta medida  */
+}
+
+/* -----------------------------------------------------------------------------------------------------------*/
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* ----------------------------------------------------------------------- */
+.logo { /* estamos editando el titulo o logo del formulario */
+    text-align: center; /* esta linea lo centrara */
+    font-size: 3em; /* aqui modificamos su tamaño, quedo ligeramente mas grande que con el tamañao H que tenia   */
+}
+
+.logo span {
+    color: #B70E21;
+}
+
+/* --------------------------------------------------------------------- */
+.contenedorFormulario {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3); /*con esta linea estamos delineando de colo blanco el contenedor del formulario*/
+}
+
+.contenedorFormulario > * { /* aqui estamos poniendo un margen de espacio para todos los elementos dentro del contenedor formulario */
+    padding: 1em;
+}
+
+/* --------------------------------------------------------------------- */
+
+
+.contact-form { 
+    background: #222222; /* aqui estamos dando color ala parte del formulario, asi llamamos nuestra clase div */
+}
+.contact-form form { 
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* esta etiqueta es para dividir nuestro contenido en 2 secciones  */
+}
+.contact-form form label {
+    display: block;
+}
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+.contact-form form .block { /*  aqui estamos seleccionando las casilllas espesificas las cuales no se mostraran en secciones, si no una debajo de la otra, con la clase.block */
+    grid-column: 1 / 3;
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea { /*  aqui estamos agragando una misme seria de intrucciones a barios componenetes del codigo,  */
+    width: 100%;
+    padding: .7em;
+    border: none; /* quitamos los bordes de los elementos   */
+    background: none; /* quitamos el fondo de los elementos  */
+    outline: 0; /* dibuja como una recuadro fantasma al momento de guardarlos y con este comando lo borramos y solo se vera la linea roja  */
+    color: #fff; /* este ers para el color de la caja de texto  */
+    border-bottom: 1px solid #d63031; /* colocamos un borde de color solido de 1px de ancho color rojo  */
+}
+.contact-form form button { /* aqui estamos dando diseño al boton enviar */
+    background: #B70E21;
+    border: 0; 
+    text-transform: uppercase; /* para hacer las letras mayusculas */
+    padding: 1em; 
+}
+.contact-form form button:hover,
+.contact-form form button:focus { /* aqui resaltaremos el color del botos y las letras cuando estos sean puchados */
+    background: #d63031; /* se pongra en un tomo mas claro  */
+    color: #fff; /* este es para las letras  */
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+/* --------------------------------------------------------------------- */
+/* CONTACT INFO */
+.contact-info { /* este es el segundo div de nuestro div principal  */
+    background: #000; /* aqui estamos dando color ala parte de mas informacion  */
+}
+/* --------------------------------------------------------------------- */
+
+.contact-info h4, .contact-info ul, .contact-info p { /* aqui estamos seleccionando varios componenetes del div informacion al cual solo estamos centrando y poniendo un ligero margen  */
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/* aqui lo estamos haciendo para pantallas grandes (responsivo)*/
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .contenedorFormulario {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+} 

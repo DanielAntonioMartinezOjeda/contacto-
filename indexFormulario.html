@@ -1,0 +1,75 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de contacto </title>
+    <link rel="stylesheet" href="styleFormulario.css"> <!-- aqui estamos ligando nuestra ojo de estilo con nuestro codigo html -->
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> <!-- estas librerias las estammos importando  -->
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body>
+    <div class="contenido"> <!-- este es nuestro div principal, en el cual vamos a poner toodo lo que tenga nuestra pagiana en un solo bloque, para de esta manera poder ajustarlo mas facil, llamese centrarlo, colorearlo, aplicarle una plartilla, etc... -->
+            <h1 class="logo">Contacto <span>Mx</span></h1> <!--aqui estamos colocando en un bloque el titulo del logo , es cual llamaremos logo para de esta manerala despues darle un estilo diferente sin afectar al resto del codigo. -->
+            <div class="contenedorFormulario animated bounceInUp"><!--En este div estamos metiendo el contenido de nuestro formulario para poder dividirlo en 2 partes, una que sera la del formulario como tal y la otra que sera la de la informacion adicional-->
+                    <div class="contact-form"> <!-- dentro del bloque que ya creamos vamos a crear otros 2 una correspondiente al formulario y otro correspondiente a la informacion extra. ESTE SERA EL BLOUE CORRESPONDIENTE A EL FORMULARIO -->
+                    <h3>Contactanos</h3>
+                    <form action="">
+                        <p>
+                            <label>Nombre Completo</label>
+                            <input type="text" name="fullname">
+                        </p>
+                        <p>
+                            <label>Email </label>
+                            <input type="email" name="email">
+                        </p>
+                        <p>
+                            <label>Numero Celular</label>
+                            <input type="tel" name="phone">
+                        </p>
+                        <p>
+                            <label>Motivo</label>
+                            <input type="text" name="affair">
+                        </p>
+                        <p class="block">  <!-- esta clase es para poner de manera diferente la caja de texto de estos elementos en especifico -->
+                        <label>Mensaje</label> 
+                            <textarea name="message" rows="3"></textarea>
+                        </p>
+                        <p class="block">
+                            <button> Enviar </button>
+                        </p>
+                    </form>
+            </div>
+            <div class="contact-info"><!-- aqui estamos utilizando el segundo bloque dentro del bloque principal el cual va a hacer referencia a la seccion de informacion extra. -->
+                <h4>Mas Informacion </h4>
+                <ul>     <!-- un UL es una lista desordenada este es el formato para que salga a amanera de lista los atributos que    queramos colocar  -->
+                <!--aqui utilizartemos uuna libreria parecida a boostrap la cual se llama FONT AWESOMES LA CUAL NOS PERMITIRA UTILIZAR ICONOS DENTRO DE NUESTRA PAGUINA, RECUARDA QUE TENEMOS QUE INPORTAR LA LIBRERIA EN NUESTRA CABESERA DEL CODIGO  -->   
+                    <li><i class="fas fa-map-marker-alt"></i> Toluca, Estado de Mexico</li>   <!-- ene sta etiqueta estamos haciendo 2 cosas estamos crearuna un renglon de nuestra lista desordenada y estamos utilizando la etiquecta i que quiere decir que vamoa utilizar iconos, en este caso de la libreria de fontawesome solo copiamos el nombre de la calse en la paguina y la pegamos  y aun lado escribimos el texto que acompañara a nuestro icono -->
+                    <li><i class="fas fa-phone"></i> (+52) 5523 7006 06</li>
+                    <li><i class="fas fa-envelope-open-text"></i> contacto@contacto.com</li>
+                </ul>
+                <p>¿Cuál es la clave para lograrlo? ¡Fácil! Añadir otros datos de interés, también conocidos como secciones adicionales para currículum, los cuales te ayudarán a complementar tu CV y darle aún más fuerza.</p>
+                <p>Company.com</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+        <!-- BIBLIOGRAFIAS  -->
+        <!-- https://www.youtube.com/watch?v=rXWNr8sEUXE --- HTML & CSS | Formulario de Contacto Responsive con CSS Grid  -->
+        <!-- https://fontawesome.com/ este es el linck de la paguina de los iconos  -->
+        <!-- https://fonts.google.com/ con este linck busque la fuente que vamos a utilizar -->
+        <!--https://animate.style/ con esta etiqueta vamos a dar una animacion a nuestro formulario mediante css -->
+       <!--  https://www.youtube.com/watch?v=klVFReOfj1k --- Cómo crear un formulario con HTML y PHP   -->
+        
+
+   
